@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-principal: #FFF;
+    --cor-fondo: #08090b;
+    --font-principal: OpenSans;
+    --font-secundaria: display;
+    --font-terciaria: regular;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(./fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: display;
+    src: url(./fonts/BUGATTIDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: regular;
+    src: url(./fonts/BUGATTIText-Regular.ttf);
+}
+
+
+
+body {
+    background: #08090b;
+    color: #FFF;
+    -webkit-font-smoothing: antialiased;
+    /* height: 70vh; */
+}
+
+body,
+input,
+button {
+    font-size: 16px;
+    font-family: var(--font-principal);
+    font: weight 300;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* estilos xerais */
+
+#video {
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+
+header img {
+    width: 127.553px;
+    height: 29.29px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--cor-principal);
+    font-size: 0.8rem;
+
+
+
+}
+
+.enlaces1 {
+    display: flex;
+    gap: 30px;
+
+}
+
+.enlaces2 {
+    display: flex;
+    gap: 30px;
+
+}
+
+form {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+
+form h1 {
+    color: var(--cor-principal);
+    text-align: center;
+    font-size: 10rem;
+    font-weight: 600;
+
+
+}
+
+.mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+input[type="email"] {
+    width: 392px;
+    height: 46px;
+    border: 2px solid var(--cor-principal);
+    background: var(--cor-principal);
+    padding: 20px;
+    border: 2px solid #FFF;
+    background: #FFF;
+}
+
+.envio {
+    background-color: var(--cor-fondo);
+    width: 137px;
+    height: 46px;
+    color: var(--cor-principal);
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 400;
+    border: 2px solid #FFF;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 3s ease;
+
+
+}
+
+.envio:hover {
+    background-color: var(--cor-principal);
+    color: #08090b;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox input {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--cor-fondo);
+    background: var(--cor-principal);
+}
+
+.checkbox a {
+    width: 508px;
+    color: #FFF;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: none;
+
+}
+
+.button {
+    border: 2px solid var(--cor-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 331px;
+    height: 46px;
+    transition: all 2s ease;
+
+}
+
+.button a {
+
+    color: var(--cor-principal);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none
+  
+
+}
+.button a:hover{
+    color: #08090b;
+}
+
+.button:hover {
+    background-color: var(--cor-principal);
+    color: #08090b;
+   
+}
+
+@media (max-width:768px) {
+      body{
+        height: 70vh;
+      }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+
+
+    }
+
+    header a {
+        text-decoration: none;
+        color: var(--cor-principal);
+        font-size: 0.6rem;
+
+
+
+    }
+
+    form h1 {
+        color: var(--cor-principal);
+        text-align: center;
+        font-size: 5rem;
+        font-weight: 600;
+
+    }
+
+    .mail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+    .mail input {
+        width: 350px;
+        height: 36px;
+        border: 2px solid var(--cor-principal);
+        background: var(--cor-principal);
+        padding: 20px;
+        border: 2px solid #FFF;
+        background: #FFF;
+    }
+
+    .button {
+        border: 2px solid var(--cor-principal);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        height: 30px;
+        transition: all 2s ease;
+
+    }
+
+}
