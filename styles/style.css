@@ -264,5 +264,15 @@ input[type="email"] {
         transition: all 2s ease;
 
     }
+    .envio {
+        background-color: var(--cor-principal);
+        color: var(--cor-fondo);
+
+    }
+
+    .envio:hover {
+        background-color: var(--cor-fondo);
+        color: var(--cor-principal);
+    }
 
 }
